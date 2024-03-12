@@ -29,16 +29,18 @@ struct ContentView: View {
                 Text("100")
             }
             
-            Button(action: checkMeButtonPressed) {
-                Text("Check me!")
-            }
+            ButtonView(
+                title: "Check me!",
+                action: checkMeButtonPressed
+            )
             .alert("Your score", isPresented: $isShowingAlert, actions: {} ) {
                 Text("\(score) points")
             }
             
-            Button(action: startOverButtonPressed) {
-                Text("Start over")
-            }
+            ButtonView(
+                title: "Start over",
+                action: startOverButtonPressed
+            )
         }
         .padding()
     }

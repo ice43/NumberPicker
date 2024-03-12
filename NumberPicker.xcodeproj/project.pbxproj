@@ -12,6 +12,7 @@
 		CD4475F72BA03EDA008137F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4475F62BA03EDA008137F8 /* Assets.xcassets */; };
 		CD4475FA2BA03EDA008137F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4475F92BA03EDA008137F8 /* Preview Assets.xcassets */; };
 		CD4476032BA041C1008137F8 /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */; };
+		CD4476092BA08A6D008137F8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4476082BA08A6D008137F8 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CD4475F62BA03EDA008137F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD4475F92BA03EDA008137F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
+		CD4476082BA08A6D008137F8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				CD4475F22BA03EDA008137F8 /* NumberPickerApp.swift */,
 				CD4475F42BA03EDA008137F8 /* ContentView.swift */,
+				CD4476082BA08A6D008137F8 /* ButtonView.swift */,
 				CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */,
 				CD4476072BA0812F008137F8 /* Resources */,
 				CD4475F82BA03EDA008137F8 /* Preview Content */,
@@ -150,6 +153,7 @@
 			files = (
 				CD4476032BA041C1008137F8 /* UISliderRepresentation.swift in Sources */,
 				CD4475F52BA03EDA008137F8 /* ContentView.swift in Sources */,
+				CD4476092BA08A6D008137F8 /* ButtonView.swift in Sources */,
 				CD4475F32BA03EDA008137F8 /* NumberPickerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
