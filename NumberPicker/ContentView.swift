@@ -61,7 +61,7 @@ struct ContentView: View {
     }
     
     private func startOverButtonPressed() {
-        currentValue = 50.0
+        currentValue = 50
         score = 0
         targetValue = Int.random(in: 0...100)
     }
