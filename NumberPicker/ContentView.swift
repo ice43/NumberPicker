@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var currentValue = 50.0
-    @State private var score = 0
     @State private var targetValue = Int.random(in: 0...100)
+    
+    @State private var score = 0
+    
     @State private var isShowingAlert = false
-
     
     var body: some View {
         VStack(spacing: 20) {
@@ -20,7 +21,11 @@ struct ContentView: View {
             
             HStack {
                 Text("0")
-                UISliderRepresentation(currentValue: $currentValue, targetValue: targetValue)
+                UISliderRepresentation(
+                    currentValue: $currentValue,
+                    targetValue: targetValue,
+                    opacity: computeOpacity()
+                )
                 Text("100")
             }
             
@@ -41,6 +46,13 @@ struct ContentView: View {
     private func computeScore() -> Int {
         let difference = abs(targetValue - lround(currentValue))
         return 100 - difference
+    }
+    
+    private func computeOpacity() -> Double {
+        let distance = abs(targetValue - lround(currentValue))
+        let maxDistance = Double(100 - 0)
+        let opacity = 1 - (Double(distance) / maxDistance)
+        return opacity
     }
     
     private func checkMeButtonPressed() {

@@ -56,7 +56,7 @@
 				CD4475F22BA03EDA008137F8 /* NumberPickerApp.swift */,
 				CD4475F42BA03EDA008137F8 /* ContentView.swift */,
 				CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */,
-				CD4475F62BA03EDA008137F8 /* Assets.xcassets */,
+				CD4476072BA0812F008137F8 /* Resources */,
 				CD4475F82BA03EDA008137F8 /* Preview Content */,
 			);
 			path = NumberPicker;
@@ -68,6 +68,14 @@
 				CD4475F92BA03EDA008137F8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD4476072BA0812F008137F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD4475F62BA03EDA008137F8 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
