@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UISliderRepresentation: UIViewRepresentable {
     @Binding var currentValue: Double
+    
     let targetValue: Int
     let opacity: Double
     

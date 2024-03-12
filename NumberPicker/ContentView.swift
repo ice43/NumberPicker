@@ -44,19 +44,17 @@ struct ContentView: View {
     }
     
     private func computeScore() -> Int {
-        let difference = abs(targetValue - lround(currentValue))
-        return 100 - difference
+        let score = abs(targetValue - lround(currentValue))
+        return score
     }
     
     private func computeOpacity() -> Double {
-        let distance = abs(targetValue - lround(currentValue))
-        let maxDistance = Double(100 - 0)
-        let opacity = 1 - (Double(distance) / maxDistance)
+        let opacity = 1 - Double(computeScore()) / 100
         return opacity
     }
     
     private func checkMeButtonPressed() {
-        score = computeScore()
+        score = 100 - computeScore()
         isShowingAlert = true
     }
     
