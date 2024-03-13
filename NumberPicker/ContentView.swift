@@ -23,7 +23,6 @@ struct ContentView: View {
                 Text("0")
                 UISliderRepresentation(
                     currentValue: $currentValue,
-                    targetValue: targetValue,
                     opacity: computeOpacity()
                 )
                 Text("100")
@@ -46,13 +45,11 @@ struct ContentView: View {
     }
     
     private func computeScore() -> Int {
-        let score = abs(targetValue - lround(currentValue))
-        return score
+        abs(targetValue - lround(currentValue))
     }
     
     private func computeOpacity() -> Double {
-        let opacity = 1 - Double(computeScore()) / 100
-        return opacity
+        1 - Double(computeScore()) / 100
     }
     
     private func checkMeButtonPressed() {
