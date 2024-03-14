@@ -55,7 +55,6 @@
 			children = (
 				CD4475F42BA03EDA008137F8 /* GameView.swift */,
 				CD2C66EC2BA2CF9E0055C281 /* GameViewViewModel.swift */,
-				CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */,
 			);
 			path = GameView;
 			sourceTree = "<group>";
@@ -65,6 +64,7 @@
 			children = (
 				CD4476082BA08A6D008137F8 /* ButtonView.swift */,
 				CD2C66EE2BA2D0F10055C281 /* GameSliderView.swift */,
+				CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
