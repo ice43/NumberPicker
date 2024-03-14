@@ -15,6 +15,10 @@ struct ButtonView: View {
         Button(action: action) {
             Text(title)
         }
+        .foregroundStyle(.white)
+        .frame(width: 120, height: 45)
+        .background(.tint)
+        .clipShape(Capsule())
     }
 }
 

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2C66E82BA2CDE30055C281 /* GameOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C66E72BA2CDE30055C281 /* GameOptions.swift */; };
+		CD2C66ED2BA2CF9E0055C281 /* GameViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C66EC2BA2CF9E0055C281 /* GameViewViewModel.swift */; };
+		CD2C66EF2BA2D0F10055C281 /* GameSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C66EE2BA2D0F10055C281 /* GameSliderView.swift */; };
 		CD4475F32BA03EDA008137F8 /* NumberPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4475F22BA03EDA008137F8 /* NumberPickerApp.swift */; };
-		CD4475F52BA03EDA008137F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4475F42BA03EDA008137F8 /* ContentView.swift */; };
+		CD4475F52BA03EDA008137F8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4475F42BA03EDA008137F8 /* GameView.swift */; };
 		CD4475F72BA03EDA008137F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4475F62BA03EDA008137F8 /* Assets.xcassets */; };
 		CD4475FA2BA03EDA008137F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4475F92BA03EDA008137F8 /* Preview Assets.xcassets */; };
 		CD4476032BA041C1008137F8 /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */; };
@@ -16,9 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2C66E72BA2CDE30055C281 /* GameOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOptions.swift; sourceTree = "<group>"; };
+		CD2C66EC2BA2CF9E0055C281 /* GameViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewViewModel.swift; sourceTree = "<group>"; };
+		CD2C66EE2BA2D0F10055C281 /* GameSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSliderView.swift; sourceTree = "<group>"; };
 		CD4475EF2BA03EDA008137F8 /* NumberPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4475F22BA03EDA008137F8 /* NumberPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPickerApp.swift; sourceTree = "<group>"; };
-		CD4475F42BA03EDA008137F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD4475F42BA03EDA008137F8 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		CD4475F62BA03EDA008137F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD4475F92BA03EDA008137F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
@@ -36,6 +42,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD2C66E92BA2CE130055C281 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C66E72BA2CDE30055C281 /* GameOptions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD2C66EB2BA2CF8F0055C281 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				CD4475F42BA03EDA008137F8 /* GameView.swift */,
+				CD2C66EC2BA2CF9E0055C281 /* GameViewViewModel.swift */,
+				CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		CD2C66F12BA2D2CF0055C281 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD4476082BA08A6D008137F8 /* ButtonView.swift */,
+				CD2C66EE2BA2D0F10055C281 /* GameSliderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CD4475E62BA03EDA008137F8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				CD4475F22BA03EDA008137F8 /* NumberPickerApp.swift */,
-				CD4475F42BA03EDA008137F8 /* ContentView.swift */,
-				CD4476082BA08A6D008137F8 /* ButtonView.swift */,
-				CD4476022BA041C1008137F8 /* UISliderRepresentation.swift */,
+				CD2C66EB2BA2CF8F0055C281 /* GameView */,
+				CD2C66F12BA2D2CF0055C281 /* Views */,
+				CD2C66E92BA2CE130055C281 /* Models */,
 				CD4476072BA0812F008137F8 /* Resources */,
 				CD4475F82BA03EDA008137F8 /* Preview Content */,
 			);
@@ -152,7 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD4476032BA041C1008137F8 /* UISliderRepresentation.swift in Sources */,
-				CD4475F52BA03EDA008137F8 /* ContentView.swift in Sources */,
+				CD2C66E82BA2CDE30055C281 /* GameOptions.swift in Sources */,
+				CD4475F52BA03EDA008137F8 /* GameView.swift in Sources */,
+				CD2C66EF2BA2D0F10055C281 /* GameSliderView.swift in Sources */,
+				CD2C66ED2BA2CF9E0055C281 /* GameViewViewModel.swift in Sources */,
 				CD4476092BA08A6D008137F8 /* ButtonView.swift in Sources */,
 				CD4475F32BA03EDA008137F8 /* NumberPickerApp.swift in Sources */,
 			);
